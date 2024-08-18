@@ -23,8 +23,6 @@ public class MyController {
     public ResponseEntity<String> exportPdf(
             @RequestParam String fileName,
             @RequestBody String content) throws IOException, DocumentException {
-
-        // Define the file path where the PDF will be saved
         Path filePath = Paths.get("C:/Users/rafee/OneDrive/Desktop/NOTES/" + fileName + ".pdf");
 
         // Generate the PDF and save it to the specified location
